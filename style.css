@@ -2,6 +2,20 @@
 /* //////////////// GLOBAL STYLES //////////////// */
 /* /////////////////////////////////////////////// */
 
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* STICKY FOOTER */
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+#content-wrap{ flex: 1; }
+
+
 /* NAVBAR */
 #search-bar{ width: 150px; }
 .cart button{
@@ -43,4 +57,4 @@
     .w-lg-auto {
       width: auto !important;
     }
-  }
+}
