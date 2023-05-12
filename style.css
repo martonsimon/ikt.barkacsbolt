@@ -1,7 +1,9 @@
-#search-bar{
-    width: 150px;
-}
+/* /////////////////////////////////////////////// */
+/* //////////////// GLOBAL STYLES //////////////// */
+/* /////////////////////////////////////////////// */
 
+/* NAVBAR */
+#search-bar{ width: 150px; }
 .cart button{
     display: flex;
     padding: 0;
@@ -11,16 +13,15 @@
     border: none !important;
 }
 .cart svg{color:black;}
-.cart .badge{
-    font-size: 8px;
-}
-.cart button:hover{
-    background-color: transparent !important;
-}
-.cart:hover svg{
-    color: red;
-}
+.cart .badge{ font-size: 8px; }
+.cart button:hover{ background-color: transparent !important; }
+.cart:hover svg{ color: red; }
 
+
+/* /////////////////////////////////////////////// */
+/* //////////////// PAGE SPECIFIC //////////////// */
+/* /////////////////////////////////////////////// */
+/* HOME */
 #carosuel-container{
     width: 100%;
     height: 180px;
@@ -34,3 +35,12 @@
     display: flex;
     align-items: center;
 }
+
+/* /////////////////////////////////////////////// */
+/* ////////////////    UTILITY    //////////////// */
+/* /////////////////////////////////////////////// */
+@media (min-width: 992px) {
+    .w-lg-auto {
+      width: auto !important;
+    }
+  }
