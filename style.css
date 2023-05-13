@@ -330,3 +330,12 @@ body {
 .object-fit-cover {
   object-fit: cover;
 }
+
+a.noformat{
+  display: inline-block;
+  text-decoration: none;
+  color: unset;
+}
+.fade-opacity:hover{
+  opacity: .6;
+}
