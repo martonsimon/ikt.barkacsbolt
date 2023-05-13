@@ -1,0 +1,13 @@
+{
+    "name": "A neve",
+    "category_id": 1,
+    "photo_url": "images/categories/csavarok.jpg",
+    "price": 1600,
+    "unit_price": 800,
+    "unit": "db",
+    "description": "Egy leírás, nem is rövid, nem is hosszú. Nem is muszáj",
+    "parameters": [
+        {"color": "red"},
+        {"size": "1m"}
+    ]
+}
