@@ -9,35 +9,8 @@
 /* //////////////// PAGE SPECIFIC //////////////// */
 /* /////////////////////////////////////////////// */
 /* HOME */
-.onsale-scroll .onsale-card{
-    width: 20%;
-}
-
-/* PRODUCTS */
-.product-card{
-    padding: 10px;
-    margin-bottom: 30px;
-    box-shadow: 3px 5px 8px 0px rgba(93, 93, 93, 0.182);
-    background-color: rgba(255, 255, 255, 0.324);
-}
-.product-card:hover{
-    background-color: white;
-}
-.product-card .img{
-    width: 140px;
-    height: 140px;
-}
-.product-card .info h3{
-    font-size: 20px;
-}
-.products .separator-hr{
-    display: none;
-}
-.product-card .price{
-    font-size: 22px;
-}
-.product-card .unit-price{
-    font-size: 14px;
+.onsale-scroll .onsale-card {
+  width: 20%;
 }
 
 .product-details{
