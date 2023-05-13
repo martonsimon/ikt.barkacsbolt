@@ -21,7 +21,9 @@ for root, dirs, files in os.walk("."):
                 merged_data.setdefault("items", []).append(json_data)
 
 # Serialize merged_data and save to merged.json
-with open("products-data.json", "w", encoding="utf-8") as merged_file:
-    json.dump(merged_data, merged_file, indent=None, separators=(",",":"), ensure_ascii=False)
+with open("products-data.js", "w", encoding="utf-8") as merged_file:
+    merged_file.write("const products_raw_data = ")
+    json.dump(merged_data, merged_file, indent=None, separators=(",", ":"), ensure_ascii=False)
+    merged_file.write(";")
 
-print("Merging completed. Merged data saved to products-data.json.")
+print("Merging completed. Merged data saved to products-data.js.")
