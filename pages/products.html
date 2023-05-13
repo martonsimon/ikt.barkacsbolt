@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <base href="../">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <base href="../" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barkácsáruház</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -102,7 +102,7 @@
 
       </div></nav>
       <!-- ///////////// NAVIGATION END /////////////-->
-    
+
       <!--//////////////// CONTENT ////////////////-->
       <div class="container">
         <div class="row"><h1 class="text-center mt-1 mb-0">Termékek</h1></div>
@@ -162,9 +162,61 @@
       </div>
     </div>
 
-    <footer class="footer">
-      <div>dynamic sticky footer</div>
+    <footer class="footer p-4">
+      <div
+        class="d-flex justify-content-between flex-column flex-md-row gap-3 gap-md-0"
+      >
+        <div class="d-flex gap-3 gap-md-5 flex-column flex-md-row">
+          <div class="d-flex flex-column">
+            <h2 class="footer-title">Nyitvatartás</h2>
+            <span class="footer-subtext"
+              ><span class="fw-bold">H: </span>9:00 - 15:00</span
+            >
+            <span class="footer-subtext"
+              ><span class="fw-bold">K: </span>9:00 - 15:00</span
+            >
+            <span class="footer-subtext"
+              ><span class="fw-bold">SZ: </span>9:00 - 15:00</span
+            >
+            <spanv><span class="fw-bold">CS: </span>9:00 - 15:00</spanv>
+            <span class="footer-subtext"
+              ><span class="fw-bold">P: </span>10:00 - 13:00</span
+            >
+          </div>
+          <div class="d-flex flex-column">
+            <h2 class="footer-title">Elérhetőség</h2>
+            <span class="footer-subtext"
+              ><span class="fw-bold">Tel.: </span>+36 70 000 0000</span
+            >
+            <span class="footer-subtext"
+              ><span class="fw-bold">Email: </span>info@barkacsbolt.hu</span
+            >
+            <span class="footer-subtext"
+              ><span class="fw-bold">Cím: </span>1039, Budapest, Pablo Neruda
+              utca 1.</span
+            >
+          </div>
+        </div>
+
+        <div class="d-flex flex-column">
+          <h4 class="text-start text-md-end footer-title">
+            Hírlevél feliratkozás
+          </h4>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="E-mail cím"
+              aria-label="E-mail cím"
+              aria-describedby="button-addon2"
+            />
+            <button class="btn btn-secondary" type="button" id="button-addon2">
+              Feliratkozás
+            </button>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>

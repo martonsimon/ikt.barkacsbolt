@@ -1,132 +1,256 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <base href="./">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <base href="./" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barkácsáruház</title>
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styles/md-screen.css" media="(min-width: 768px)">
-    <link rel="stylesheet" href="styles/lg-screen.css" media="(min-width: 992px)">
-</head>
-<body>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="styles/md-screen.css"
+      media="(min-width: 768px)"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/lg-screen.css"
+      media="(min-width: 992px)"
+    />
+  </head>
+  <body>
     <div id="content-wrap" class="">
       <!-- ///////////// NAVIGATION BEGIN /////////////-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light"><div class="container-fluid">
-        <!-- Badge and search bar for small screens -->
-        <div class="d-flex align-items-center justify-content-between w-100 w-lg-auto">
-          <div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand d-none d-sm-inline" href="#">
-              <img src="https://dummyimage.com/600x400/000/fff" alt="" width="30" height="24" class="d-inline-block align-middle d-none">
-              Barkács
-            </a>
-          </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <!-- Badge and search bar for small screens -->
+          <div
+            class="d-flex align-items-center justify-content-between w-100 w-lg-auto"
+          >
+            <div>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand d-none d-sm-inline" href="#">
+                <img
+                  src="https://dummyimage.com/600x400/000/fff"
+                  alt=""
+                  width="30"
+                  height="24"
+                  class="d-inline-block align-middle d-none"
+                />
+                Barkács
+              </a>
+            </div>
 
-          <!-- SEARCH FORM BEGIN -->
-          <form class="d-flex align-items-center d-lg-none">
+            <!-- SEARCH FORM BEGIN -->
+            <form class="d-flex align-items-center d-lg-none">
+              <div class="input-group" id="search-bar">
+                <input type="text" class="form-control" placeholder="Search" />
+                <span class="input-group-text" id="basic-addon2"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-search"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                    /></svg
+                ></span>
+              </div>
+              <div class="cart">
+                <button type="button" class="btn btn-primary position-relative">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    fill="currentColor"
+                    class="bi bi-cart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                    />
+                  </svg>
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  >
+                    12
+                  </span>
+                </button>
+              </div>
+            </form>
+            <!-- SEARCH FORM END -->
+          </div>
+          <!-- Badge and search bar for small screens END -->
+
+          <!-- Navbar menu items -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- /////////MENU ITEMS -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link disabled"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Disabled</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Navbar menu items END -->
+
+          <!-- SEARCH FORM LARGE SCREEN BEGIN -->
+          <form class="align-items-center d-none d-lg-flex me-2">
             <div class="input-group" id="search-bar">
-              <input type="text" class="form-control" placeholder="Search">
-              <span class="input-group-text" id="basic-addon2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-              </svg></span>
+              <input type="text" class="form-control" placeholder="Search" />
+              <span class="input-group-text" id="basic-addon2"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  /></svg
+              ></span>
             </div>
             <div class="cart">
               <button type="button" class="btn btn-primary position-relative">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  class="bi bi-cart"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                  />
                 </svg>
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
                   12
                 </span>
               </button>
             </div>
           </form>
-          <!-- SEARCH FORM END -->
+          <!-- SEARCH FORM LARGE SCREEN END -->
         </div>
-        <!-- Badge and search bar for small screens END -->
-
-        <!-- Navbar menu items -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <!-- /////////MENU ITEMS -->
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Navbar menu items END -->
-
-        <!-- SEARCH FORM LARGE SCREEN BEGIN -->
-        <form class=" align-items-center d-none d-lg-flex me-2">
-          <div class="input-group" id="search-bar">
-            <input type="text" class="form-control" placeholder="Search">
-            <span class="input-group-text" id="basic-addon2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-            </svg></span>
-          </div>
-          <div class="cart">
-            <button type="button" class="btn btn-primary position-relative">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-              </svg>
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                12
-              </span>
-            </button>
-          </div>
-        </form>
-        <!-- SEARCH FORM LARGE SCREEN END -->
-
-
-      </div></nav>
+      </nav>
       <!-- ///////////// NAVIGATION END /////////////-->
-    
+
       <!--//////////////// CONTENT ////////////////-->
       <div id="carosuel-container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="https://dummyimage.com/600x400/000/fff" alt="Third slide">
+              <img
+                class="d-block w-100"
+                src="https://dummyimage.com/600x400/000/fff"
+                alt="Third slide"
+              />
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="https://dummyimage.com/600x400/000/fff" alt="Third slide">
+              <img
+                class="d-block w-100"
+                src="https://dummyimage.com/600x400/000/fff"
+                alt="Third slide"
+              />
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="https://dummyimage.com/600x400/000/fff" alt="Third slide">
+              <img
+                class="d-block w-100"
+                src="https://dummyimage.com/600x400/000/fff"
+                alt="Third slide"
+              />
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -134,41 +258,55 @@
       </div>
 
       <div class="container">
-        <div class="row"><h2 class="text-center mt-5">Termék kategóriák</h2></div>
+        <div class="row">
+          <h2 class="text-center mt-5">Termék kategóriák</h2>
+        </div>
         <div class="row">
           <div class="col-6 col-md-4 col-lg-2 category-card">
             <div class="wrapper">
-              <div class="img"><img src="images/categories/festekek.jpg" class="" ></div>
+              <div class="img">
+                <img src="images/categories/festekek.jpg" class="" />
+              </div>
               <h3>Festékek</h3>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-2 category-card">
             <div class="wrapper">
-              <div class="img"><img src="images/categories/faanyagok.jpg" class="" ></div>
+              <div class="img">
+                <img src="images/categories/faanyagok.jpg" class="" />
+              </div>
               <h3>Faanyagok</h3>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-2 category-card">
             <div class="wrapper">
-              <div class="img"><img src="images/categories/csavarok.jpg" class="" ></div>
+              <div class="img">
+                <img src="images/categories/csavarok.jpg" class="" />
+              </div>
               <h3>Csavarok</h3>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-2 category-card">
             <div class="wrapper">
-              <div class="img"><img src="images/categories/ragasztok.jpg" class="" ></div>
+              <div class="img">
+                <img src="images/categories/ragasztok.jpg" class="" />
+              </div>
               <h3>Ragasztók</h3>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-2 category-card">
             <div class="wrapper">
-              <div class="img"><img src="images/categories/szerszamok.jpg" class="" ></div>
+              <div class="img">
+                <img src="images/categories/szerszamok.jpg" class="" />
+              </div>
               <h3>Szerszámok</h3>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-2 category-card">
             <div class="wrapper">
-              <div class="img"><img src="images/categories/dekoraciok.jpg" class="" ></div>
+              <div class="img">
+                <img src="images/categories/dekoraciok.jpg" class="" />
+              </div>
               <h3>Dekorációk</h3>
             </div>
           </div>
@@ -179,65 +317,110 @@
           <div class="col-12 onsale-scroll">
             <div class="onsale-card">
               <div class="wrapper">
-                <div class="img"><img src="images/categories/festekek.jpg" class="" ></div>
+                <div class="img">
+                  <img src="images/categories/festekek.jpg" class="" />
+                </div>
                 <h3>Csavarok</h3>
-                <p><span class="original-price">1 600 Ft</span>, <span class="new-price">1 250 Ft</span></p>
+                <p>
+                  <span class="original-price">1 600 Ft</span>,
+                  <span class="new-price">1 250 Ft</span>
+                </p>
               </div>
             </div>
             <div class="onsale-card">
               <div class="wrapper">
-                <div class="img"><img src="images/categories/festekek.jpg" class="" ></div>
+                <div class="img">
+                  <img src="images/categories/festekek.jpg" class="" />
+                </div>
                 <h3>Festékek</h3>
-                <p><span class="original-price">1 600 Ft</span>, <span class="new-price">1 250 Ft</span></p>
+                <p>
+                  <span class="original-price">1 600 Ft</span>,
+                  <span class="new-price">1 250 Ft</span>
+                </p>
               </div>
             </div>
             <div class="onsale-card">
               <div class="wrapper">
-                <div class="img"><img src="images/categories/festekek.jpg" class="" ></div>
+                <div class="img">
+                  <img src="images/categories/festekek.jpg" class="" />
+                </div>
                 <h3>Festékek</h3>
-                <p><span class="original-price">1 600 Ft</span>, <span class="new-price">1 250 Ft</span></p>
+                <p>
+                  <span class="original-price">1 600 Ft</span>,
+                  <span class="new-price">1 250 Ft</span>
+                </p>
               </div>
             </div>
             <div class="onsale-card">
               <div class="wrapper">
-                <div class="img"><img src="images/categories/festekek.jpg" class="" ></div>
+                <div class="img">
+                  <img src="images/categories/festekek.jpg" class="" />
+                </div>
                 <h3>Festékek</h3>
-                <p><span class="original-price">1 600 Ft</span>, <span class="new-price">1 250 Ft</span></p>
+                <p>
+                  <span class="original-price">1 600 Ft</span>,
+                  <span class="new-price">1 250 Ft</span>
+                </p>
               </div>
             </div>
             <div class="onsale-card">
               <div class="wrapper">
-                <div class="img"><img src="images/categories/festekek.jpg" class="" ></div>
+                <div class="img">
+                  <img src="images/categories/festekek.jpg" class="" />
+                </div>
                 <h3>Festékek</h3>
-                <p><span class="original-price">1 600 Ft</span>, <span class="new-price">1 250 Ft</span></p>
+                <p>
+                  <span class="original-price">1 600 Ft</span>,
+                  <span class="new-price">1 250 Ft</span>
+                </p>
               </div>
             </div>
             <div class="onsale-card">
               <div class="wrapper">
-                <div class="img"><img src="images/categories/festekek.jpg" class="" ></div>
+                <div class="img">
+                  <img src="images/categories/festekek.jpg" class="" />
+                </div>
                 <h3>Festékek</h3>
-                <p><span class="original-price">1 600 Ft</span>, <span class="new-price">1 250 Ft</span></p>
+                <p>
+                  <span class="original-price">1 600 Ft</span>,
+                  <span class="new-price">1 250 Ft</span>
+                </p>
               </div>
             </div>
             <div class="onsale-card">
               <div class="wrapper">
-                <div class="img"><img src="images/categories/festekek.jpg" class="" ></div>
+                <div class="img">
+                  <img src="images/categories/festekek.jpg" class="" />
+                </div>
                 <h3>Festékek</h3>
-                <p><span class="original-price">1 600 Ft</span>, <span class="new-price">1 250 Ft</span></p>
+                <p>
+                  <span class="original-price">1 600 Ft</span>,
+                  <span class="new-price">1 250 Ft</span>
+                </p>
               </div>
             </div>
             <div class="onsale-card">
               <div class="wrapper">
-                <div class="img"><img src="images/categories/festekek.jpg" class="" ></div>
+                <div class="img">
+                  <img src="images/categories/festekek.jpg" class="" />
+                </div>
                 <h3>Festékek</h3>
-                <p><span class="original-price">1 600 Ft</span>, <span class="new-price">1 250 Ft</span></p>
+                <p>
+                  <span class="original-price">1 600 Ft</span>,
+                  <span class="new-price">1 250 Ft</span>
+                </p>
               </div>
             </div>
             <div class="onsale-card">
               <div class="wrapper">
-                <div class="img"><img src="images/categories/festekek.jpg" class="" ></div>
+                <div class="img">
+                  <img src="images/categories/festekek.jpg" class="" />
+                </div>
                 <h3>Festékek</h3>
-                <p><span class="original-price">1 600 Ft</span>, <span class="new-price">1 250 Ft</span></p>
+                <p>
+                  <span class="original-price">1 600 Ft</span>,
+                  <span class="new-price">1 250 Ft</span>
+                </p>
               </div>
             </div>
           </div>
@@ -246,22 +429,37 @@
         <div class="row"><h2 class="text-center mt-5">Hírek</h2></div>
         <div class="row blog-previews">
           <div class="col-12 col-md-4 col-lg-3 blog-preview">
-            <a href="#" class="hidden-link"><p>
-              <b>A blognak a címe: </b>Egy leírás a blognak, ami lehet hosszabb is Egy leírás a blognak, ami lehet hosszabb is Egy leírás a blognak, ami lehet hosszabb is Egy leírás a blognak, ami lehet hosszabb is
-              <span class="link">Tovább</span>
-            </p></a>
+            <a href="#" class="hidden-link"
+              ><p>
+                <b>A blognak a címe: </b>Egy leírás a blognak, ami lehet
+                hosszabb is Egy leírás a blognak, ami lehet hosszabb is Egy
+                leírás a blognak, ami lehet hosszabb is Egy leírás a blognak,
+                ami lehet hosszabb is
+                <span class="link">Tovább</span>
+              </p></a
+            >
           </div>
           <div class="col-12 col-md-4 col-lg-3 blog-preview">
-            <a href="#" class="hidden-link"><p>
-              <b>A blognak a címe: </b>Egy leírás a blognak, ami lehet hosszabb is Egy leírás a blognak, ami lehet hosszabb is Egy leírás a blognak, ami lehet hosszabb is Egy leírás a blognak, ami lehet hosszabb is
-              <span class="link">Tovább</span>
-            </p></a>
+            <a href="#" class="hidden-link"
+              ><p>
+                <b>A blognak a címe: </b>Egy leírás a blognak, ami lehet
+                hosszabb is Egy leírás a blognak, ami lehet hosszabb is Egy
+                leírás a blognak, ami lehet hosszabb is Egy leírás a blognak,
+                ami lehet hosszabb is
+                <span class="link">Tovább</span>
+              </p></a
+            >
           </div>
           <div class="col-12 col-md-4 col-lg-3 blog-preview">
-            <a href="#" class="hidden-link"><p>
-              <b>A blognak a címe: </b>Egy leírás a blognak, ami lehet hosszabb is Egy leírás a blognak, ami lehet hosszabb is Egy leírás a blognak, ami lehet hosszabb is Egy leírás a blognak, ami lehet hosszabb is
-              <span class="link">Tovább</span>
-            </p></a>
+            <a href="#" class="hidden-link"
+              ><p>
+                <b>A blognak a címe: </b>Egy leírás a blognak, ami lehet
+                hosszabb is Egy leírás a blognak, ami lehet hosszabb is Egy
+                leírás a blognak, ami lehet hosszabb is Egy leírás a blognak,
+                ami lehet hosszabb is
+                <span class="link">Tovább</span>
+              </p></a
+            >
           </div>
           <div class="col-12">
             <button class="btn btn-outline-success">Összes</button>
@@ -270,9 +468,61 @@
       </div>
     </div>
 
-    <footer class="footer">
-      <div>dynamic sticky footer</div>
+    <footer class="footer p-4">
+      <div
+        class="d-flex justify-content-between flex-column flex-md-row gap-3 gap-md-0"
+      >
+        <div class="d-flex gap-3 gap-md-5 flex-column flex-md-row">
+          <div class="d-flex flex-column">
+            <h2 class="footer-title">Nyitvatartás</h2>
+            <span class="footer-subtext"
+              ><span class="fw-bold">H: </span>9:00 - 15:00</span
+            >
+            <span class="footer-subtext"
+              ><span class="fw-bold">K: </span>9:00 - 15:00</span
+            >
+            <span class="footer-subtext"
+              ><span class="fw-bold">SZ: </span>9:00 - 15:00</span
+            >
+            <spanv><span class="fw-bold">CS: </span>9:00 - 15:00</spanv>
+            <span class="footer-subtext"
+              ><span class="fw-bold">P: </span>10:00 - 13:00</span
+            >
+          </div>
+          <div class="d-flex flex-column">
+            <h2 class="footer-title">Elérhetőség</h2>
+            <span class="footer-subtext"
+              ><span class="fw-bold">Tel.: </span>+36 70 000 0000</span
+            >
+            <span class="footer-subtext"
+              ><span class="fw-bold">Email: </span>info@barkacsbolt.hu</span
+            >
+            <span class="footer-subtext"
+              ><span class="fw-bold">Cím: </span>1039, Budapest, Pablo Neruda
+              utca 1.</span
+            >
+          </div>
+        </div>
+
+        <div class="d-flex flex-column">
+          <h4 class="text-start text-md-end footer-title">
+            Hírlevél feliratkozás
+          </h4>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="E-mail cím"
+              aria-label="E-mail cím"
+              aria-describedby="button-addon2"
+            />
+            <button class="btn btn-secondary" type="button" id="button-addon2">
+              Feliratkozás
+            </button>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>
