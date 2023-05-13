@@ -106,10 +106,10 @@
       <!--//////////////// CONTENT ////////////////-->
       <div class="container">
         <div class="row">
-          <div id="category-hint">&lt; Termékek | Csavarok</div>
+          <div id="category-hint"><a href="index.html">&lt; Termékek</a> | <a href="" id="category-nav-link">Csavarok</a></div>
         </div>
         <div class="row">
-          <div class="col-12">
+          <div class="col-12" id="product-wrapper">
             <div class="product-card product-details">
               <div class="img">
                 <img src="images/categories/csavarok.jpg" alt="" class="">
@@ -133,8 +133,8 @@
                   </div>
                   <div class="order">
                     <div class="input-group mb-0">
-                      <input type="number" class="form-control" placeholder="db">
-                      <button class="btn btn-outline-success" type="button" id="button-addon2">Kosárba</button>
+                      <input type="number" class="form-control" placeholder="db" id="amount">
+                      <button class="btn btn-outline-success" type="button" id="button-addon2" onclick="addToCart();">Kosárba</button>
                     </div>
                   </div>
                 </div>
@@ -203,6 +203,10 @@
         </div>
       </div>
     </footer>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="products-data/products-data.js"></script>
+    <script src="products-data/products.js"></script>
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/product_loader.js"></script>
   </body>
 </html>
