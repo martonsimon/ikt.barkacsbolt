@@ -3,7 +3,7 @@ const products_wrapper_id = "productsWrapper";
 function createProductHTML(item) {
     return `
         <div class="col-12">
-        <div class="product-card rounded">
+        <a href="pages/product.html?item=${item.id}" class="noformat w-100 d-block"><div class="product-card rounded">
           <div class="img">
             <img src="${item.photo_url}" alt="" class="" />
           </div>
@@ -23,7 +23,7 @@ function createProductHTML(item) {
               <span class="unit-price">${toHUF(item.unit_price)}/${item.unit}</span>
             </div>
           </div>
-        </div>
+        </div></a>
       </div>
       <div class="col-12"><hr class="separator-hr" /></div>
   `;
@@ -52,4 +52,3 @@ function loadProducts(){
 }
 
 loadProducts();
-  
