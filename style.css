@@ -5,6 +5,8 @@
 html, body {
     height: 100%;
     width: 100%;
+    background-color: #F1F1F1;
+    background-color: #ebebeb;
 }
 
 /* STICKY FOOTER */
@@ -130,6 +132,7 @@ body{
 #category-hint{
     color: rgb(85, 85, 85);
     font-size: 14px;
+    margin-bottom: 10px;
 }
 .product-card{
     display: flex;
@@ -189,4 +192,8 @@ body{
     .w-lg-auto {
       width: auto !important;
     }
+}
+.separator-hr{
+    margin: 15px auto;
+    width: 60%;
 }
