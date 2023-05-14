@@ -25,8 +25,8 @@ function createProductHTML(item) {
         </div>
         <div class="order">
           <div class="input-group mb-0">
-            <input type="number" class="form-control" placeholder="${
-              item.unit
+            <input type="number" min="0" value="1" class="form-control" placeholder="${
+              item.unit_used ? item.unit_used : item.unit
             }" id="amount">
             <button class="btn baseButton" type="button" id="button-addon2" onclick="addToCart();">Kosárba</button>
           </div>

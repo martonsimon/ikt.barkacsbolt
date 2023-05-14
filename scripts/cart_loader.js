@@ -70,7 +70,10 @@ function createCartItemHTML(cartItem) {
               /></svg
               ></span>
               <span class="fw-bold">${toHUF(
-                cartItem.amount * cartItem.unit_price
+                cartItem.amount *
+                  (cartItem.unit_used !== undefined
+                    ? cartItem.price
+                    : cartItem.unit_price)
               )}</span>
       </div>
     </div>
@@ -108,12 +111,15 @@ function loadCartItems() {
   }
   var HTML = "";
   cartItems.forEach(function (cartItem) {
-    totalPrice += cartItem.amount * cartItem.unit_price;
+    console.log(cartItem.unit_used);
+    totalPrice +=
+      cartItem.amount *
+      (cartItem.unit_used !== undefined ? cartItem.price : cartItem.unit_price);
     HTML += createCartItemHTML(cartItem);
   });
   cartItemsContainer.innerHTML = HTML;
 
-  var tax = totalPrice * 0.27;
+  var tax = Math.round(totalPrice * 0.27);
   document.getElementById("price-cart").innerText =
     "Kosár: " + toHUF(totalPrice);
   document.getElementById("price-tax").innerText = "Áfa (27%): " + toHUF(tax);
