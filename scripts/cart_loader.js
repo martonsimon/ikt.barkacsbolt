@@ -137,7 +137,6 @@ function loadCartItems() {
       cartItem.amount *
       (cartItem.unit_used !== undefined ? cartItem.price : cartItem.unit_price);
     const discount = Math.round(price * (cartItem.discount_percent / 100)) || 0;
-    console.log(price, discount, price - discount);
 
     totalPrice += price - discount;
     HTML += createCartItemHTML(cartItem);
