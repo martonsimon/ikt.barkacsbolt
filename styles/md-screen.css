@@ -5,23 +5,30 @@
 /* STICKY FOOTER */
 /* NAVBAR */
 
-
 /* /////////////////////////////////////////////// */
 /* //////////////// PAGE SPECIFIC //////////////// */
 /* /////////////////////////////////////////////// */
 /* HOME */
-.blog-preview .link{
-    display: inline;
+.onsale-scroll {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  overflow-x: auto;
 }
-.onsale-scroll{
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    overflow-x: auto;
+.onsale-scroll .onsale-card {
+  width: 33.33%;
 }
-.onsale-scroll .onsale-card{
-    width: 33.33%;
+.blog-preview {
+  background-color: white;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.12);
 }
 
+.onsale-card .wrapper {
+  width: 150px;
+}
+
+.onsale-scroll {
+  max-height: 365px;
+}
 
 /* /////////////////////////////////////////////// */
 /* ////////////////    UTILITY    //////////////// */

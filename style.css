@@ -144,7 +144,7 @@ body {
   flex-wrap: nowrap;
   overflow-x: scroll;
   user-select: none;
-  max-height: 430px;
+  max-height: 420px;
 }
 .onsale-card .wrapper {
   width: 180px;
@@ -171,19 +171,11 @@ body {
   box-shadow: none;
 }
 
-@media (min-width: 768px) {
-  .blog-preview {
-    background-color: white;
-    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.12);
-  }
-}
-
 .baseButton {
   background-color: #d1e7dd;
   color: #146c43;
   font-weight: 600;
 }
-
 .baseButton:hover {
   background-color: #c7e5d9;
   color: #0e583a;
@@ -204,104 +196,6 @@ body {
 #category-hint a:hover {
   text-decoration: underline;
 }
-.product-card {
-  display: flex;
-  width: 100%;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-.product-card .img {
-  width: 110px;
-  height: 110px;
-  flex-shrink: 0;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-right: 10px;
-}
-.product-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.product-card .info {
-  padding-left: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.product-card .info h3 {
-  font-size: 16px;
-  margin-bottom: 0;
-}
-.product-card .rating {
-  font-size: 0;
-}
-.product-card .rating svg {
-  margin-right: 2px;
-}
-.product-card .price {
-  margin: 0;
-  display: block;
-  line-height: 0.8;
-  font-size: 16px;
-  font-weight: bold;
-  margin-top: 15px;
-}
-.product-card .unit-price {
-  margin: 0;
-  display: block;
-  font-size: 12px;
-  color: rgb(99, 99, 99);
-  margin-bottom: 5px;
-}
-
-/* PRODUCT */
-.product-details {
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-.product-details .img {
-  width: 100%;
-  padding-top: 100%;
-  position: relative;
-  margin-right: 0;
-}
-.product-details .img img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.product-details .info {
-  padding-left: 0;
-}
-.product-details .info h3 {
-  font-size: 22px;
-}
-.product-details .info .price {
-  font-size: 22px;
-}
-.product-details .info .unit-price {
-  font-size: 14px;
-}
-.product-details .order {
-  display: block;
-  width: 160px;
-  margin-bottom: 0;
-}
-.product-details .description {
-  font-size: 18px;
-  margin-top: 10px;
-}
-.product-details .detailed-description {
-  margin-top: 20px;
-  display: block;
-  width: 100%;
-}
-
-/* BLOGS */
 
 /* /////////////////////////////////////////////// */
 /* ////////////////    UTILITY    //////////////// */

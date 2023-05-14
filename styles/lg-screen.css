@@ -8,7 +8,6 @@
 /* /////////////////////////////////////////////// */
 /* //////////////// PAGE SPECIFIC //////////////// */
 /* /////////////////////////////////////////////// */
-/* HOME */
 
 .product-details {
   flex-direction: initial;
@@ -41,6 +40,14 @@
 }
 .product-details .info h3 {
   font-size: 32px;
+}
+
+.onsale-scroll {
+  max-height: 420px;
+}
+
+.onsale-card .wrapper {
+  width: 180px;
 }
 
 /* /////////////////////////////////////////////// */
