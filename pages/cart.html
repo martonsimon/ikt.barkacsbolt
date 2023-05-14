@@ -36,7 +36,10 @@
               >
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <a class="navbar-brand d-none d-sm-inline fw-bold" href="#">
+              <a
+                class="navbar-brand d-none d-sm-inline fw-bold"
+                href="index.html"
+              >
                 <img
                   src="https://dummyimage.com/600x400/000/fff"
                   alt=""
@@ -50,24 +53,18 @@
 
             <!-- SEARCH FORM BEGIN -->
             <form class="d-flex align-items-center d-lg-none">
-              <div class="input-group" id="search-bar">
-                <input type="text" class="form-control" placeholder="Search" />
-                <span class="input-group-text" id="basic-addon2"
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-search"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                    /></svg
-                ></span>
-              </div>
+              <input
+                type="text"
+                class="form-control me-2"
+                id="exampleFormControlInput1"
+                placeholder="Keresés"
+              />
               <div class="cart">
-                <button type="button" class="btn btn-primary position-relative">
+                <a
+                  role="button"
+                  class="position-relative"
+                  href="pages/cart.html"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="22"
@@ -81,11 +78,10 @@
                     />
                   </svg>
                   <span
-                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-count"
                   >
-                    12
                   </span>
-                </button>
+                </a>
               </div>
             </form>
             <!-- SEARCH FORM END -->
@@ -95,55 +91,86 @@
           <!-- Navbar menu items -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <!-- /////////MENU ITEMS -->
+              <!-- ///////// MENU ITEMS ////////-->
               <li
-                class="nav-item d-flex align-items-center me-2 nav-item-desktop"
+                class="nav-item d-flex align-items-center me-2 ms-2 nav-item-desktop"
               >
                 <a
                   class="nav-link active nav-link-desktop rounded-pill"
                   aria-current="page"
-                  href="#"
+                  href="index.html"
                   >Kezdőlap</a
                 >
               </li>
+
               <li
-                class="nav-item d-flex align-items-center me-2 nav-item-desktop"
+                class="nav-item d-flex align-items-center me-2 ms-2 nav-item-desktop"
               >
                 <a
                   class="nav-link active nav-link-desktop rounded-pill"
                   aria-current="page"
-                  href="#"
-                  >Hírek</a
+                  href="pages/blogs.html"
+                  >Blogok</a
                 >
               </li>
-              <li class="nav-item dropdown">
+
+              <li
+                class="nav-item dropdown d-flex align-items-center me-2 ms-2 nav-item-desktop"
+              >
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle nav-link-desktop rounded-pill"
                   href="#"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  Termékek
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a
+                      class="dropdown-item"
+                      href="pages/products.html?category=0"
+                      >Festékek</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="pages/products.html?category=1"
+                      >Faanyagok</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="pages/products.html?category=2"
+                      >Csavarok</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="pages/products.html?category=3"
+                      >Ragasztók</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="pages/products.html?category=4"
+                      >Szerszámok</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="pages/products.html?category=5"
+                      >Dekorációk</a
+                    >
                   </li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link disabled"
-                  href="#"
-                  tabindex="-1"
-                  aria-disabled="true"
-                  >Disabled</a
-                >
               </li>
             </ul>
           </div>
@@ -151,24 +178,14 @@
 
           <!-- SEARCH FORM LARGE SCREEN BEGIN -->
           <form class="align-items-center d-none d-lg-flex me-2">
-            <div class="input-group" id="search-bar">
-              <input type="text" class="form-control" placeholder="Search" />
-              <span class="input-group-text" id="basic-addon2"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-search"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                  /></svg
-              ></span>
-            </div>
+            <input
+              type="text"
+              class="form-control me-2"
+              id="exampleFormControlInput1"
+              placeholder="Keresés"
+            />
             <div class="cart">
-              <button type="button" class="btn btn-primary position-relative">
+              <a role="button" class="position-relative" href="pages/cart.html">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
@@ -182,11 +199,10 @@
                   />
                 </svg>
                 <span
-                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-count"
                 >
-                  12
                 </span>
-              </button>
+              </a>
             </div>
           </form>
           <!-- SEARCH FORM LARGE SCREEN END -->
@@ -195,81 +211,28 @@
       <!-- ///////////// NAVIGATION END /////////////-->
 
       <!--//////////////// CONTENT ////////////////-->
-      <div class="container desktop-main rounded">
+      <div class="container desktop-main rounded p-3" id="cart-notify">
         <div class="row">
-          <h1 class="text-center mt-1 mb-0 text-md-start">Kosár</h1>
+          <h1 class="text-center mb-3 text-md-start">Kosár</h1>
         </div>
 
-        <div class="row g-3">
-          <div class="col-12">
-            <div class="d-flex cart-item rounded">
-              <img
-                src="images/categories/csavarok.jpg"
-                alt=""
-                class="rounded me-2 object-fit-cover"
-                width="80px"
-                height="80px"
-              />
-              <div class="d-flex justify-content-between w-100">
-                <div class="d-flex flex-column">
-                  <span class="fw-bold">Szuper facsavar, 3mm</span>
-                  <span class="fw-bold">1 250 Ft</span>
-                </div>
-
-                <div class="d-flex flex-column gap-2">
-                  <span class="align-self-end">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-x-lg"
-                      viewBox="0 0 16 16"
-                      role="button"
-                    >
-                      <path
-                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
-                      /></svg
-                  ></span>
-                  <span class="d-flex align-items-center gap-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-dash-circle"
-                      viewBox="0 0 16 16"
-                      role="button"
-                    >
-                      <path
-                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
-                      />
-                      <path
-                        d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"
-                      />
-                    </svg>
-                    <span class="fw-bold lh-1">2</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-plus-circle"
-                      viewBox="0 0 16 16"
-                      role="button"
-                    >
-                      <path
-                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
-                      />
-                      <path
-                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
-                      />
-                    </svg>
-                  </span>
-                </div>
-              </div>
-            </div>
+        <div class="row g-3" id="cart-items">
+          <!-- CART ITEMS HERE -->
+        </div>
+        <div class="d-flex w-100 justify-content-end mt-3">
+          <div class="d-flex flex-column align-items-end">
+            <span class="text-muted lh-1" id="price-cart"></span>
+            <span
+              class="text-muted lh-1 border-bottom pb-1 w-100 text-end"
+              id="price-tax"
+            ></span>
+            <span class="fw-bold fs-3" id="price-sum"></span>
           </div>
+        </div>
+        <div class="d-flex w-100 justify-content-end">
+          <button class="btn baseButton mt-3" style="width: 15%">
+            Fizetés
+          </button>
         </div>
       </div>
     </div>
@@ -335,5 +298,6 @@
     <script src="scripts/utils.js"></script>
     <script src="scripts/cart.js"></script>
     <script src="scripts/cart_loader.js"></script>
+    <script src="scripts/cart_count.js"></script>
   </body>
 </html>

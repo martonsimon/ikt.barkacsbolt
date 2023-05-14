@@ -9,38 +9,39 @@
 /* //////////////// PAGE SPECIFIC //////////////// */
 /* /////////////////////////////////////////////// */
 /* HOME */
-.onsale-scroll .onsale-card {
-  width: 20%;
+
+.product-details {
+  flex-direction: initial;
+  flex-wrap: wrap;
 }
 
-.product-details{
-    flex-direction: initial;
-    flex-wrap: wrap;
+.product-details .img {
+  width: 200px;
+  height: 200px;
+  position: initial;
+  flex-shrink: 0;
+  padding-top: 0;
+  margin-right: 10px;
 }
-.product-details:hover{
-    background-color: rgba(255, 255, 255, 0.324);
+.product-details .img img {
+  width: 100%;
+  height: 100%;
+  position: initial;
+  transform: none;
 }
-.product-details .img{
-    width: 400px;
-    height: 400px;
-    position: initial;
-    flex-shrink: 0;
-    padding-top: 0;
-    margin-right: 10px;
+.product-details .info {
+  flex-basis: 0;
+  flex-grow: 1;
 }
-.product-details .img img{
-    width: 100%;
-    height: 100%;
-    position: initial;
-    transform: none;
+.product-details .info .price {
+  font-size: 32px;
 }
-.product-details .info{
-    flex-basis: 0;
-    flex-grow: 1;
+.product-details .info .unit-price {
+  font-size: 20px;
 }
-.product-details .info .price{ font-size: 32px; }
-.product-details .info .unit-price{ font-size: 20px; }
-.product-details .info h3{ font-size: 32px; }
+.product-details .info h3 {
+  font-size: 32px;
+}
 
 /* /////////////////////////////////////////////// */
 /* ////////////////    UTILITY    //////////////// */

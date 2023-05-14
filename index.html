@@ -8,8 +8,16 @@
     <title>Barkácsáruház</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="styles/md-screen.css" media="(min-width: 768px)" />
-    <link rel="stylesheet" href="styles/lg-screen.css" media="(min-width: 992px)"/>
+    <link
+      rel="stylesheet"
+      href="styles/md-screen.css"
+      media="(min-width: 768px)"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/lg-screen.css"
+      media="(min-width: 992px)"
+    />
   </head>
   <body>
     <div id="content-wrap" class="">
@@ -17,35 +25,67 @@
       <nav class="navbar navbar-expand-lg navbar-light navBack">
         <div class="container-fluid">
           <!-- Badge and search bar for small screens -->
-          <div class="d-flex align-items-center justify-content-between w-100 w-lg-auto" >
+          <div
+            class="d-flex align-items-center justify-content-between w-100 w-lg-auto"
+          >
             <div>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <a class="navbar-brand d-none d-sm-inline fw-bold" href="index.html">
-                <img src="https://dummyimage.com/600x400/000/fff" alt="" width="30" height="24" class="d-inline-block align-middle d-none"/>
+              <a
+                class="navbar-brand d-none d-sm-inline fw-bold"
+                href="index.html"
+              >
+                <img
+                  src="https://dummyimage.com/600x400/000/fff"
+                  alt=""
+                  width="30"
+                  height="24"
+                  class="d-inline-block align-middle d-none"
+                />
                 Barkács
               </a>
             </div>
 
             <!-- SEARCH FORM BEGIN -->
             <form class="d-flex align-items-center d-lg-none">
-              <div class="input-group" id="search-bar">
-                <input type="text" class="form-control" placeholder="Search" />
-                <span class="input-group-text" id="basic-addon2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>
-                </span>
-              </div>
-
+              <input
+                type="text"
+                class="form-control me-2"
+                id="exampleFormControlInput1"
+                placeholder="Keresés"
+              />
               <div class="cart">
-                <button type="button" class="btn btn-primary position-relative">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16" >
-                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                <a
+                  role="button"
+                  class="position-relative"
+                  href="pages/cart.html"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    fill="currentColor"
+                    class="bi bi-cart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                    />
                   </svg>
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" >
-                    12
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-count"
+                  >
                   </span>
-                </button>
+                </a>
               </div>
             </form>
             <!-- SEARCH FORM END -->
@@ -56,29 +96,85 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <!-- ///////// MENU ITEMS ////////-->
-              <li class="nav-item d-flex align-items-center me-2 nav-item-desktop" >
-                <a class="nav-link active nav-link-desktop rounded-pill" aria-current="page" href="index.html">Kezdőlap</a>
+              <li
+                class="nav-item d-flex align-items-center me-2 ms-2 nav-item-desktop"
+              >
+                <a
+                  class="nav-link active nav-link-desktop rounded-pill"
+                  aria-current="page"
+                  href="index.html"
+                  >Kezdőlap</a
+                >
               </li>
 
-              <li class="nav-item d-flex align-items-center me-2 nav-item-desktop" >
-                <a class="nav-link active nav-link-desktop rounded-pill" aria-current="page" href="pages/blogs.html">Blogok</a>
+              <li
+                class="nav-item d-flex align-items-center me-2 ms-2 nav-item-desktop"
+              >
+                <a
+                  class="nav-link active nav-link-desktop rounded-pill"
+                  aria-current="page"
+                  href="pages/blogs.html"
+                  >Blogok</a
+                >
               </li>
 
-              <li class="nav-item dropdown d-flex align-items-center me-2 nav-item-desktop">
-                <a class="nav-link dropdown-toggle nav-link-desktop rounded-pill" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li
+                class="nav-item dropdown d-flex align-items-center me-2 ms-2 nav-item-desktop"
+              >
+                <a
+                  class="nav-link dropdown-toggle nav-link-desktop rounded-pill"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Termékek
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="pages/products.html?category=0">Festékek</a></li>
-                  <li><a class="dropdown-item" href="pages/products.html?category=1">Faanyagok</a></li>
-                  <li><a class="dropdown-item" href="pages/products.html?category=2">Csavarok</a></li>
-                  <li><a class="dropdown-item" href="pages/products.html?category=3">Ragasztók</a></li>
-                  <li><a class="dropdown-item" href="pages/products.html?category=4">Szerszámok</a></li>
-                  <li><a class="dropdown-item" href="pages/products.html?category=5">Dekorációk</a></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="pages/products.html?category=0"
+                      >Festékek</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="pages/products.html?category=1"
+                      >Faanyagok</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="pages/products.html?category=2"
+                      >Csavarok</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="pages/products.html?category=3"
+                      >Ragasztók</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="pages/products.html?category=4"
+                      >Szerszámok</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="pages/products.html?category=5"
+                      >Dekorációk</a
+                    >
+                  </li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
               </li>
             </ul>
           </div>
@@ -86,21 +182,31 @@
 
           <!-- SEARCH FORM LARGE SCREEN BEGIN -->
           <form class="align-items-center d-none d-lg-flex me-2">
-            <div class="input-group" id="search-bar">
-              <input type="text" class="form-control" placeholder="Search" />
-              <span class="input-group-text" id="basic-addon2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>
-              </span>
-            </div>
+            <input
+              type="text"
+              class="form-control me-2"
+              id="exampleFormControlInput1"
+              placeholder="Keresés"
+            />
             <div class="cart">
-              <button type="button" class="btn btn-primary position-relative">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              <a role="button" class="position-relative" href="pages/cart.html">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  class="bi bi-cart"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                  />
                 </svg>
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" >
-                  12
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-count"
+                >
                 </span>
-              </button>
+              </a>
             </div>
           </form>
           <!-- SEARCH FORM LARGE SCREEN END -->
@@ -109,7 +215,7 @@
       <!-- ///////////// NAVIGATION END /////////////-->
 
       <!--//////////////// CONTENT ////////////////-->
-      <div id="carosuel-container">
+      <div id="carosuel-container" class="d-block d-xl-none">
         <div
           id="carouselExampleIndicators"
           class="carousel slide"
@@ -181,224 +287,287 @@
         </div>
       </div>
 
-      <div class="container">
-        <div class="row">
-          <h2 class="text-center mt-5">Termék kategóriák</h2>
+      <div class="container rounded">
+        <div class="row g-3">
+          <div class="col-12 col-xl-6">
+            <div class="desktop-main rounded p-3">
+              <h2 class="text-center text-md-start fw-bold mb-3">Kategóriák</h2>
+              <div class="row">
+                <div class="col-6 col-md-4 col-lg-4 category-card fade-opacity">
+                  <a
+                    href="pages/products.html?category=0"
+                    class="noformat d-block"
+                  >
+                    <div class="wrapper">
+                      <div class="img">
+                        <img src="images/categories/festekek.jpg" class="" />
+                      </div>
+                      <h3>Festékek</h3>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 category-card fade-opacity">
+                  <a
+                    href="pages/products.html?category=1"
+                    class="noformat d-block"
+                  >
+                    <div class="wrapper">
+                      <div class="img">
+                        <img src="images/categories/faanyagok.jpg" class="" />
+                      </div>
+                      <h3>Faanyagok</h3>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 category-card fade-opacity">
+                  <a
+                    href="pages/products.html?category=2"
+                    class="noformat d-block"
+                  >
+                    <div class="wrapper">
+                      <div class="img">
+                        <img src="images/categories/csavarok.jpg" class="" />
+                      </div>
+                      <h3>Csavarok</h3>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 category-card fade-opacity">
+                  <a
+                    href="pages/products.html?category=3"
+                    class="noformat d-block"
+                  >
+                    <div class="wrapper">
+                      <div class="img">
+                        <img src="images/categories/ragasztok.jpg" class="" />
+                      </div>
+                      <h3>Ragasztók</h3>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 category-card fade-opacity">
+                  <a
+                    href="pages/products.html?category=4"
+                    class="noformat d-block"
+                  >
+                    <div class="wrapper">
+                      <div class="img">
+                        <img src="images/categories/szerszamok.jpg" class="" />
+                      </div>
+                      <h3>Szerszámok</h3>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 category-card fade-opacity">
+                  <a
+                    href="pages/products.html?category=5"
+                    class="noformat d-block"
+                  >
+                    <div class="wrapper">
+                      <div class="img">
+                        <img src="images/categories/dekoraciok.jpg" class="" />
+                      </div>
+                      <h3>Dekorációk</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-6">
+            <div class="desktop-main rounded p-3">
+              <h2 class="text-center text-md-start fw-bold mb-3">
+                Akciós termékek
+              </h2>
+              <div class="onsale-scroll">
+                <div class="onsale-card fade-opacity">
+                  <div class="wrapper">
+                    <div class="img">
+                      <img src="images/categories/festekek.jpg" class="" />
+                    </div>
+                    <h3>Csavarok</h3>
+                    <p>
+                      <span class="original-price">1 600 Ft</span>,
+                      <span class="new-price">1 250 Ft</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="onsale-card fade-opacity">
+                  <div class="wrapper">
+                    <div class="img">
+                      <img src="images/categories/festekek.jpg" class="" />
+                    </div>
+                    <h3>Festékek</h3>
+                    <p>
+                      <span class="original-price">1 600 Ft</span>,
+                      <span class="new-price">1 250 Ft</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="onsale-card fade-opacity">
+                  <div class="wrapper">
+                    <div class="img">
+                      <img src="images/categories/festekek.jpg" class="" />
+                    </div>
+                    <h3>Festékek</h3>
+                    <p>
+                      <span class="original-price">1 600 Ft</span>,
+                      <span class="new-price">1 250 Ft</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="onsale-card fade-opacity">
+                  <div class="wrapper">
+                    <div class="img">
+                      <img src="images/categories/festekek.jpg" class="" />
+                    </div>
+                    <h3>Festékek</h3>
+                    <p>
+                      <span class="original-price">1 600 Ft</span>,
+                      <span class="new-price">1 250 Ft</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="onsale-card fade-opacity">
+                  <div class="wrapper">
+                    <div class="img">
+                      <img src="images/categories/festekek.jpg" class="" />
+                    </div>
+                    <h3>Festékek</h3>
+                    <p>
+                      <span class="original-price">1 600 Ft</span>,
+                      <span class="new-price">1 250 Ft</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="onsale-card fade-opacity">
+                  <div class="wrapper">
+                    <div class="img">
+                      <img src="images/categories/festekek.jpg" class="" />
+                    </div>
+                    <h3>Festékek</h3>
+                    <p>
+                      <span class="original-price">1 600 Ft</span>,
+                      <span class="new-price">1 250 Ft</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="onsale-card fade-opacity">
+                  <div class="wrapper">
+                    <div class="img">
+                      <img src="images/categories/festekek.jpg" class="" />
+                    </div>
+                    <h3>Festékek</h3>
+                    <p>
+                      <span class="original-price">1 600 Ft</span>,
+                      <span class="new-price">1 250 Ft</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="onsale-card">
+                  <div class="wrapper">
+                    <div class="img">
+                      <img src="images/categories/festekek.jpg" class="" />
+                    </div>
+                    <h3>Festékek</h3>
+                    <p>
+                      <span class="original-price">1 600 Ft</span>,
+                      <span class="new-price">1 250 Ft</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="onsale-card">
+                  <div class="wrapper">
+                    <div class="img">
+                      <img src="images/categories/festekek.jpg" class="" />
+                    </div>
+                    <h3>Festékek</h3>
+                    <p>
+                      <span class="original-price">1 600 Ft</span>,
+                      <span class="new-price">1 250 Ft</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row">
-          <div class="col-6 col-md-4 col-lg-2 category-card fade-opacity">
-            <a href="pages/products.html?category=0" class="noformat d-block">
-              <div class="wrapper">
-                <div class="img">
-                  <img src="images/categories/festekek.jpg" class="" />
-                </div>
-                <h3>Festékek</h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2 category-card fade-opacity">
-            <a href="pages/products.html?category=1" class="noformat d-block">
-              <div class="wrapper">
-                <div class="img">
-                  <img src="images/categories/faanyagok.jpg" class="" />
-                </div>
-                <h3>Faanyagok</h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2 category-card fade-opacity">
-            <a href="pages/products.html?category=2" class="noformat d-block">
-              <div class="wrapper">
-                <div class="img">
-                  <img src="images/categories/csavarok.jpg" class="" />
-                </div>
-                <h3>Csavarok</h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2 category-card fade-opacity">
-            <a href="pages/products.html?category=3" class="noformat d-block">
-              <div class="wrapper">
-                <div class="img">
-                  <img src="images/categories/ragasztok.jpg" class="" />
-                </div>
-                <h3>Ragasztók</h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2 category-card fade-opacity">
-            <a href="pages/products.html?category=4" class="noformat d-block">
-              <div class="wrapper">
-                <div class="img">
-                  <img src="images/categories/szerszamok.jpg" class="" />
-                </div>
-                <h3>Szerszámok</h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2 category-card fade-opacity">
-            <a href="pages/products.html?category=5" class="noformat d-block">
-              <div class="wrapper">
-                <div class="img">
-                  <img src="images/categories/dekoraciok.jpg" class="" />
-                </div>
-                <h3>Dekorációk</h3>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="row"><h2 class="text-center mt-5">Akciós termékek</h2></div>
-        <div class="row">
-          <div class="col-12 onsale-scroll">
-            <div class="onsale-card fade-opacity">
-              <div class="wrapper">
-                <div class="img">
-                  <img src="images/categories/festekek.jpg" class="" />
-                </div>
-                <h3>Csavarok</h3>
-                <p>
-                  <span class="original-price">1 600 Ft</span>,
-                  <span class="new-price">1 250 Ft</span>
+        <div class="desktop-main rounded p-3">
+          <h2 class="text-center text-md-start fw-bold mb-3">
+            Legfrissebb hírek
+          </h2>
+          <div class="row g-3">
+            <div class="col-12 col-md-4 col-lg-3">
+              <div class="d-flex flex-column blog-preview p-3 rounded">
+                <h3 class="fw-bold">Egy hír címe</h3>
+                <p class="text-muted">
+                  In ultricies fermentum aliquet. Pellentesque dui magna,
+                  condimentum non ullamcorper at, cursus in sem. Nunc
+                  condimentum, purus ac sagittis ultricies, metus leo pharetra
+                  mi, non vehicula felis elit et nisi. Etiam venenatis commodo
+                  libero, vel ullamcorper nibh lobortis vel. Aliquam auctor
+                  porta tortor, nec consequat nibh finibus a. Sed ultrices risus
+                  eget iaculis luctus. Mauris vel gravida magna.
                 </p>
+                <a class="btn baseButton align-self-end" href="#" role="button"
+                  >Tovább</a
+                >
               </div>
             </div>
-            <div class="onsale-card fade-opacity">
-              <div class="wrapper">
-                <div class="img">
-                  <img src="images/categories/festekek.jpg" class="" />
-                </div>
-                <h3>Festékek</h3>
-                <p>
-                  <span class="original-price">1 600 Ft</span>,
-                  <span class="new-price">1 250 Ft</span>
+            <div class="col-12 col-md-4 col-lg-3">
+              <div class="d-flex flex-column blog-preview p-3 rounded">
+                <h3 class="fw-bold">Egy hír címe</h3>
+                <p class="text-muted">
+                  In ultricies fermentum aliquet. Pellentesque dui magna,
+                  condimentum non ullamcorper at, cursus in sem. Nunc
+                  condimentum, purus ac sagittis ultricies, metus leo pharetra
+                  mi, non vehicula felis elit et nisi. Etiam venenatis commodo
+                  libero, vel ullamcorper nibh lobortis vel. Aliquam auctor
+                  porta tortor, nec consequat nibh finibus a. Sed ultrices risus
+                  eget iaculis luctus. Mauris vel gravida magna.
                 </p>
+                <a class="btn baseButton align-self-end" href="#" role="button"
+                  >Tovább</a
+                >
               </div>
             </div>
-            <div class="onsale-card fade-opacity">
-              <div class="wrapper">
-                <div class="img">
-                  <img src="images/categories/festekek.jpg" class="" />
-                </div>
-                <h3>Festékek</h3>
-                <p>
-                  <span class="original-price">1 600 Ft</span>,
-                  <span class="new-price">1 250 Ft</span>
+            <div class="col-12 col-md-4 col-lg-3">
+              <div class="d-flex flex-column blog-preview p-3 rounded">
+                <h3 class="fw-bold">Egy hír címe</h3>
+                <p class="text-muted">
+                  In ultricies fermentum aliquet. Pellentesque dui magna,
+                  condimentum non ullamcorper at, cursus in sem. Nunc
+                  condimentum, purus ac sagittis ultricies, metus leo pharetra
+                  mi, non vehicula felis elit et nisi. Etiam venenatis commodo
+                  libero, vel ullamcorper nibh lobortis vel. Aliquam auctor
+                  porta tortor, nec consequat nibh finibus a. Sed ultrices risus
+                  eget iaculis luctus. Mauris vel gravida magna.
                 </p>
+                <a class="btn baseButton align-self-end" href="#" role="button"
+                  >Tovább</a
+                >
               </div>
             </div>
-            <div class="onsale-card fade-opacity">
-              <div class="wrapper">
-                <div class="img">
-                  <img src="images/categories/festekek.jpg" class="" />
-                </div>
-                <h3>Festékek</h3>
-                <p>
-                  <span class="original-price">1 600 Ft</span>,
-                  <span class="new-price">1 250 Ft</span>
+            <div class="col-12 col-md-4 col-lg-3">
+              <div class="d-flex flex-column blog-preview p-3 rounded">
+                <h3 class="fw-bold">Egy hír címe</h3>
+                <p class="text-muted">
+                  In ultricies fermentum aliquet. Pellentesque dui magna,
+                  condimentum non ullamcorper at, cursus in sem. Nunc
+                  condimentum, purus ac sagittis ultricies, metus leo pharetra
+                  mi, non vehicula felis elit et nisi. Etiam venenatis commodo
+                  libero, vel ullamcorper nibh lobortis vel. Aliquam auctor
+                  porta tortor, nec consequat nibh finibus a. Sed ultrices risus
+                  eget iaculis luctus. Mauris vel gravida magna.
                 </p>
+                <a class="btn baseButton align-self-end" href="#" role="button"
+                  >Tovább</a
+                >
               </div>
             </div>
-            <div class="onsale-card fade-opacity">
-              <div class="wrapper">
-                <div class="img">
-                  <img src="images/categories/festekek.jpg" class="" />
-                </div>
-                <h3>Festékek</h3>
-                <p>
-                  <span class="original-price">1 600 Ft</span>,
-                  <span class="new-price">1 250 Ft</span>
-                </p>
-              </div>
+            <div class="col-12">
+              <button class="btn btn-outline-success">Összes</button>
             </div>
-            <div class="onsale-card fade-opacity">
-              <div class="wrapper">
-                <div class="img">
-                  <img src="images/categories/festekek.jpg" class="" />
-                </div>
-                <h3>Festékek</h3>
-                <p>
-                  <span class="original-price">1 600 Ft</span>,
-                  <span class="new-price">1 250 Ft</span>
-                </p>
-              </div>
-            </div>
-            <div class="onsale-card fade-opacity">
-              <div class="wrapper">
-                <div class="img">
-                  <img src="images/categories/festekek.jpg" class="" />
-                </div>
-                <h3>Festékek</h3>
-                <p>
-                  <span class="original-price">1 600 Ft</span>,
-                  <span class="new-price">1 250 Ft</span>
-                </p>
-              </div>
-            </div>
-            <div class="onsale-card">
-              <div class="wrapper">
-                <div class="img">
-                  <img src="images/categories/festekek.jpg" class="" />
-                </div>
-                <h3>Festékek</h3>
-                <p>
-                  <span class="original-price">1 600 Ft</span>,
-                  <span class="new-price">1 250 Ft</span>
-                </p>
-              </div>
-            </div>
-            <div class="onsale-card">
-              <div class="wrapper">
-                <div class="img">
-                  <img src="images/categories/festekek.jpg" class="" />
-                </div>
-                <h3>Festékek</h3>
-                <p>
-                  <span class="original-price">1 600 Ft</span>,
-                  <span class="new-price">1 250 Ft</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row"><h2 class="text-center mt-5">Hírek</h2></div>
-        <div class="row blog-previews">
-          <div class="col-12 col-md-4 col-lg-3 blog-preview">
-            <a href="#" class="hidden-link"
-              ><p>
-                <b>A blognak a címe: </b>Egy leírás a blognak, ami lehet
-                hosszabb is Egy leírás a blognak, ami lehet hosszabb is Egy
-                leírás a blognak, ami lehet hosszabb is Egy leírás a blognak,
-                ami lehet hosszabb is
-                <span class="link">Tovább</span>
-              </p></a
-            >
-          </div>
-          <div class="col-12 col-md-4 col-lg-3 blog-preview">
-            <a href="#" class="hidden-link"
-              ><p>
-                <b>A blognak a címe: </b>Egy leírás a blognak, ami lehet
-                hosszabb is Egy leírás a blognak, ami lehet hosszabb is Egy
-                leírás a blognak, ami lehet hosszabb is Egy leírás a blognak,
-                ami lehet hosszabb is
-                <span class="link">Tovább</span>
-              </p></a
-            >
-          </div>
-          <div class="col-12 col-md-4 col-lg-3 blog-preview">
-            <a href="#" class="hidden-link"
-              ><p>
-                <b>A blognak a címe: </b>Egy leírás a blognak, ami lehet
-                hosszabb is Egy leírás a blognak, ami lehet hosszabb is Egy
-                leírás a blognak, ami lehet hosszabb is Egy leírás a blognak,
-                ami lehet hosszabb is
-                <span class="link">Tovább</span>
-              </p></a
-            >
-          </div>
-          <div class="col-12">
-            <button class="btn btn-outline-success">Összes</button>
           </div>
         </div>
       </div>
@@ -464,5 +633,6 @@
     <script src="products-data/products.js"></script>
     <script src="scripts/utils.js"></script>
     <script src="scripts/cart.js"></script>
+    <script src="scripts/cart_count.js"></script>
   </body>
 </html>
