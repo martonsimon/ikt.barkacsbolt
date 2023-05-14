@@ -5,6 +5,9 @@
   "price": 3198,
   "unit_price": 1599,
   "unit": "m",
+
+  "is_discounted": true,
+  "discount_percent": 7,
   "description": "A nyers fűrészáru zsaluzódeszka tető- és szakipari szerkezetek építésére, aljzatok és válaszfalak készítésére, valamint polcok és mindenfajta faszerkezet építésére alkalmas. A deszka finom vágási felületű, különösen nagy teherbírású, stabil és robusztus. Kérjük, vegye figyelembe, hogy a fűrészelt áru akár 10% méreteltérésű lehet.",
   "parameters": []
 }

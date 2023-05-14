@@ -69,12 +69,34 @@ function createCartItemHTML(cartItem) {
                 d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
               /></svg
               ></span>
-              <span class="fw-bold">${toHUF(
-                cartItem.amount *
-                  (cartItem.unit_used !== undefined
-                    ? cartItem.price
-                    : cartItem.unit_price)
-              )}</span>
+              <div class="d-flex gap-1">
+              ${
+                cartItem.is_discounted
+                  ? `<span class="text-muted text-decoration-line-through">${toHUF(
+                      cartItem.amount *
+                        (cartItem.unit_used !== undefined
+                          ? cartItem.price
+                          : cartItem.unit_price)
+                    )}</span>`
+                  : ""
+              }
+
+              <span class="fw-bold ${
+                cartItem.is_discounted ? "text-danger" : ""
+              }">${toHUF(
+    Math.round(
+      cartItem.amount *
+        (cartItem.unit_used !== undefined
+          ? cartItem.price
+          : cartItem.unit_price) -
+        (cartItem.amount *
+          (cartItem.unit_used !== undefined
+            ? cartItem.price
+            : cartItem.unit_price) *
+          cartItem.discount_percent) /
+          100
+    )
+  )}</span></div>
       </div>
     </div>
   </div>
@@ -111,10 +133,13 @@ function loadCartItems() {
   }
   var HTML = "";
   cartItems.forEach(function (cartItem) {
-    console.log(cartItem.unit_used);
-    totalPrice +=
+    const price =
       cartItem.amount *
       (cartItem.unit_used !== undefined ? cartItem.price : cartItem.unit_price);
+    const discount = Math.round(price * (cartItem.discount_percent / 100)) || 0;
+    console.log(price, discount, price - discount);
+
+    totalPrice += price - discount;
     HTML += createCartItemHTML(cartItem);
   });
   cartItemsContainer.innerHTML = HTML;

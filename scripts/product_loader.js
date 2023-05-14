@@ -19,10 +19,24 @@ function createProductHTML(item) {
         <p class="fs-6 mt-2">${item.description}</p>
       </div>
       <div class="d-flex justify-content-between align-items-center">
+
         <div>
-          <span class="fw-bold mt-2 d-block fs-3 lh-1">${toHUF(
-            item.price
-          )}</span>
+          <div class="d-flex align-items-baseline">
+              <span class="mt-3 lh-1 d-block price ${
+                item.is_discounted
+                  ? "text-muted text-decoration-line-through fs-4"
+                  : "fw-bold fs-4"
+              }">${toHUF(item.price)}</span>
+              ${
+                item.is_discounted
+                  ? `<span class="mt-3 ms-2 text-danger fw-bold fs-4">${toHUF(
+                      Math.round(
+                        item.price - item.price * (item.discount_percent / 100)
+                      )
+                    )}</span>`
+                  : ""
+              }
+              </div>
           <span class="d-block fs-6 text-muted">${toHUF(item.unit_price)}/${
     item.unit
   }</span>

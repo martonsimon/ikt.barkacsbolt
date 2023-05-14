@@ -5,6 +5,9 @@
   "price": 34990,
   "unit_price": 34990,
   "unit": "DB",
+
+  "is_discounted": true,
+  "discount_percent": 12,
   "description": "Precíz és lágy bemerítés a Curved-Tec merülőfűrészlapok lekerekített vágóélének köszönhetően. Egyenletesen nagy teljesítmény terhelés alatt is a Bosch konstans elektronikának köszönhetően. Optimálisan vezethető a kiegészítő fogantyú opcionális felhelyezésével. Gyorsabb előrehaladást biztosító nagy teljesítményű, 220 wattos motor. Az anyagnak és az alkalmazásnak megfelelő munkavégzés a fokozatmentes rezgésszám-előválasztás révén.",
   "parameters": []
 }

@@ -5,6 +5,8 @@
   "price": 6497,
   "unit_price": 2599,
   "unit": "m",
+  "is_discounted": true,
+  "discount_percent": 2,
   "description": "Az SI rétegragasztott fa gerenda alkalmas tetőépítéshez, konstrukciós belsőépítészethez, valamint fedett gépkocsibeálló, pergola és előtető építésére.",
   "parameters": []
 }

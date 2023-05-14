@@ -5,6 +5,8 @@
   "price": 2999,
   "unit_price": 2999,
   "unit": "DB",
+  "is_discounted": true,
+  "discount_percent": 34,
   "description": "A Samantha dekoráció azonnal felhívja magára a figyelmet. Nagyszerű dekor kiegészítő, amely beltérben a legszebb helyeken elhelyezve megfelelő hangulatot teremt. A termék fáradt világoslila és lila színvilágával illeszkedik a trendhez. A termék stílusa modern és ugyanolyan időtálló, mint a felhasznált anyagok.",
   "parameters": []
 }

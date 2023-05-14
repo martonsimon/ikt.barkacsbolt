@@ -6,6 +6,8 @@
   "unit_price": 64,
   "unit": "DB",
   "unit_used": "csomag",
+  "is_discounted": true,
+  "discount_percent": 12,
   "description": "Az eresztartó csavarok az eresztartók szarufára történő rögzítésére szolgálnak. Méret: 6 mm x 30 mm",
   "parameters": []
 }
