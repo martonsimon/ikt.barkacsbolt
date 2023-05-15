@@ -34,8 +34,8 @@
           </div>
 
           <!-- SEARCH FORM BEGIN -->
-          <form class="d-flex align-items-center d-lg-none">
-            <input type="text" class="form-control me-2" placeholder="Keresés">
+          <form class="d-flex align-items-center d-lg-none" action="pages/products.html">
+            <input type="text" class="form-control me-2" placeholder="Keresés" name="search">
             <div class="cart">
               <a role="button" class="position-relative" href="pages/cart.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart"
@@ -99,8 +99,8 @@
         <!-- Navbar menu items END -->
 
         <!-- SEARCH FORM LARGE SCREEN BEGIN -->
-        <form class="align-items-center d-none d-lg-flex me-2">
-          <input type="text" class="form-control me-2" placeholder="Keresés">
+        <form class="align-items-center d-none d-lg-flex me-2" action="pages/products.html">
+          <input type="text" class="form-control me-2" placeholder="Keresés" name="search">
           <div class="cart">
             <a role="button" class="position-relative" href="pages/cart.html">
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart"
@@ -342,6 +342,7 @@
     </div>
   </footer>
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/Fuse/fuse.min.js"></script>
   <script src="products-data/products-data.js"></script>
   <script src="products-data/products.js"></script>
   <script src="scripts/utils.js"></script>

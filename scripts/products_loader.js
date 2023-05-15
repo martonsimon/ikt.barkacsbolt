@@ -55,9 +55,15 @@ function clear_products() {
 
 function loadProducts() {
   var queryParams = getQueryParams();
-  var category = queryParams ? queryParams.category || "0" : "0";
+  var category = queryParams ? queryParams.category || undefined : undefined;
+  var searchQuery = queryParams ? queryParams.search || undefined : undefined;
+  console.log(searchQuery);
 
-  var items = getItemsInCategory(category * 1);
+  var items;
+  if (searchQuery)
+    items = getItemsBySearch(searchQuery);
+  else
+    items = getItemsInCategory(category * 1);
 
   clear_products();
   var productsItems = document.getElementById(products_wrapper_id);
@@ -67,7 +73,10 @@ function loadProducts() {
   });
 
   var myspan = document.getElementById("categories");
-  myspan.innerHTML = `${getCategoryById(category).name} (${items.length})`;
+  if (searchQuery)
+    myspan.innerHTML = `${"\""+searchQuery+"\""} (${items.length})`;
+  else
+    myspan.innerHTML = `${getCategoryById(category).name} (${items.length})`;
 }
 
 loadProducts();
