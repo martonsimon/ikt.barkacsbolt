@@ -9,7 +9,7 @@
 /* //////////////// PAGE SPECIFIC //////////////// */
 /* /////////////////////////////////////////////// */
 /* HOME */
-#carosuel-container{
+#carosuel-container {
   height: 280px;
 }
 .onsale-scroll {
@@ -36,10 +36,13 @@
 .product-details .img {
   box-shadow: none;
 }
-.product-details .priceWrapper div{
+.product-details .priceWrapper div {
   flex-direction: unset;
 }
 
+#category-hint {
+  padding-left: 0;
+}
 
 /* /////////////////////////////////////////////// */
 /* ////////////////    UTILITY    //////////////// */

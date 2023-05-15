@@ -184,8 +184,10 @@ body {
 /* PRODUCTS */
 #category-hint {
   color: rgb(85, 85, 85);
-  font-size: 14px;
-  margin-bottom: 10px;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  padding-left: 1rem;
 }
 #category-hint a,
 #category-hint a:link,
@@ -198,11 +200,11 @@ body {
 }
 
 /* BLOGS */
-.blog-preview{
+.blog-preview {
   height: 360px;
   overflow: hidden;
 }
-.blog-preview p{
+.blog-preview p {
   text-overflow: ellipsis;
   overflow: hidden;
 }

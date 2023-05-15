@@ -62,7 +62,7 @@ function loadProduct() {
   var item = getItemById(itemID * 1);
 
   var productWrapper = document.getElementById(product_wrapper_id);
-  productWrapper.innerHTML = createProductHTML(item);
+  productWrapper.insertAdjacentHTML("beforeend", createProductHTML(item));
 
   var categoryNavBack = document.getElementById("category-nav-link");
   categoryNavBack.innerHTML = `${getCategoryById(item.category_id).name}`;
