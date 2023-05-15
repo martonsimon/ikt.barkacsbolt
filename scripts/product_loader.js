@@ -3,7 +3,7 @@ const product_wrapper_id = "product-wrapper";
 function createProductHTML(item) {
   return `
     <div class="d-flex flex-row flex-wrap product-card product-details desktop-main rounded p-3">
-    <div class="img rounded me-4">
+    <div class="img rounded me-lg-4">
       <img src="${item.photo_url}">
     </div>
     <div class="info d-flex flex-column justify-content-between">
@@ -20,16 +20,16 @@ function createProductHTML(item) {
       </div>
       <div class="d-flex justify-content-between align-items-center">
 
-        <div>
+        <div class="priceWrapper">
           <div class="d-flex align-items-baseline">
-              <span class="mt-3 lh-1 d-block price ${
+              <span class="mt-md-3 lh-1 d-block price ${
                 item.is_discounted
                   ? "text-muted text-decoration-line-through fs-4"
                   : "fw-bold fs-4"
               }">${toHUF(item.price)}</span>
               ${
                 item.is_discounted
-                  ? `<span class="mt-3 ms-2 text-danger fw-bold fs-4">${toHUF(
+                  ? `<span class="mt-3 ms-md-2 text-danger fw-bold fs-4">${toHUF(
                       Math.round(
                         item.price - item.price * (item.discount_percent / 100)
                       )

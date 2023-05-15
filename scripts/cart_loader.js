@@ -2,6 +2,8 @@
 //Use it to display the items
 
 function createCartItemHTML(cartItem) {
+  if (!cartItem.discount_percent)
+    cartItem.discount_percent = 0;
   return `
   <div class="col-12">
   <div class="d-flex cart-item rounded">
@@ -14,7 +16,7 @@ function createCartItemHTML(cartItem) {
     />
     <div class="d-flex justify-content-between w-100">
       <div class="d-flex flex-column gap-1">
-        <span class="fw-bold fs-6">${cartItem.name}</span>
+        <a class="noformat" href="pages/product.html?item=${cartItem.id}"><span class="fw-bold fs-6">${cartItem.name}</span></a>
         <span class="d-flex align-items-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"

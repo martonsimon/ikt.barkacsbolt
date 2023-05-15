@@ -24,11 +24,19 @@
 
 .onsale-card .wrapper {
   width: 150px;
+  overflow: hidden;
 }
 
 .onsale-scroll {
   max-height: 365px;
 }
+.product-details .img {
+  box-shadow: none;
+}
+.product-details .priceWrapper div{
+  flex-direction: unset;
+}
+
 
 /* /////////////////////////////////////////////// */
 /* ////////////////    UTILITY    //////////////// */

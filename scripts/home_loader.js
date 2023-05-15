@@ -1,6 +1,6 @@
 function generateDiscountHTML(item) {
   return `
-  <a class="onsale-card d-block noformat fade-opacity" href="/pages/product.html?item=${
+  <a class="onsale-card d-block noformat fade-opacity" href="pages/product.html?item=${
     item.id
   }">
                   <div class="wrapper">

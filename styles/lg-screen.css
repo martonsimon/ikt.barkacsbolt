@@ -47,7 +47,12 @@
 }
 
 .onsale-card .wrapper {
-  width: 180px;
+  /*width: 180px;*/
+  overflow: hidden;
+}
+.product-details .img {
+  margin-bottom: 0;
+  border-radius: unset;
 }
 
 /* /////////////////////////////////////////////// */

@@ -3,6 +3,10 @@
   padding-top: 100%;
   position: relative;
   margin-right: 0;
+  margin-bottom: 15px;
+  border-radius: 10px !important;
+  overflow: hidden;
+  box-shadow: 5px 3px 10px rgba(128, 128, 128, 0.443);
 }
 .product-details .img img {
   width: 100%;
@@ -25,4 +29,7 @@
   margin-top: 20px;
   display: block;
   width: 100%;
+}
+.product-details .priceWrapper div{
+  flex-direction: column-reverse;
 }
