@@ -1,5 +1,11 @@
 .blog-post {
   background-color: #e7e7e7;
+  height: 450px;
+  overflow: hidden;
+}
+.blog-post p{
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -7,4 +13,11 @@
     background-color: white;
     box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.12);
   }
+}
+
+#dataWrapper{
+  font-size: 20px;
+}
+#title{
+  
 }

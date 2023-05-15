@@ -197,6 +197,16 @@ body {
   text-decoration: underline;
 }
 
+/* BLOGS */
+.blog-preview{
+  height: 360px;
+  overflow: hidden;
+}
+.blog-preview p{
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 /* /////////////////////////////////////////////// */
 /* ////////////////    UTILITY    //////////////// */
 /* /////////////////////////////////////////////// */
