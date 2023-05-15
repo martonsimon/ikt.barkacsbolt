@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <base href="../">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barkácsáruház</title>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/blogs.css">
+</head>
+
+<body>
+  <div id="content-wrap" class="">
+    <!-- ///////////// NAVIGATION BEGIN /////////////-->
+    <nav class="navbar navbar-expand-lg navbar-light navBack">
+      <div class="container-fluid">
+        <!-- Badge and search bar for small screens -->
+        <div class="d-flex align-items-center justify-content-between w-100 w-lg-auto">
+          <div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand d-none d-sm-inline fw-bold" href="index.html">
+              <img src="https://dummyimage.com/600x400/000/fff" alt="" width="30" height="24"
+                class="d-inline-block align-middle d-none">
+              Barkács
+            </a>
+          </div>
+
+          <!-- SEARCH FORM BEGIN -->
+          <form class="d-flex align-items-center d-lg-none">
+            <input type="text" class="form-control me-2" placeholder="Keresés">
+            <div class="cart">
+              <a role="button" class="position-relative" href="pages/cart.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+                  </path>
+                </svg>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-count">
+                </span>
+              </a>
+            </div>
+          </form>
+          <!-- SEARCH FORM END -->
+        </div>
+        <!-- Badge and search bar for small screens END -->
+
+        <!-- Navbar menu items -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- ///////// MENU ITEMS ////////-->
+            <li class="nav-item d-flex align-items-center me-2 ms-2 nav-item-desktop">
+              <a class="nav-link active nav-link-desktop rounded-pill" aria-current="page"
+                href="index.html">Kezdőlap</a>
+            </li>
+
+            <li class="nav-item d-flex align-items-center me-2 ms-2 nav-item-desktop">
+              <a class="nav-link active nav-link-desktop rounded-pill" aria-current="page"
+                href="pages/blogs.html">Blogok</a>
+            </li>
+
+            <li class="nav-item dropdown d-flex align-items-center me-2 ms-2 nav-item-desktop">
+              <a class="nav-link dropdown-toggle nav-link-desktop rounded-pill" href="#" id="navbarDropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Termékek
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="pages/products.html?category=0">Festékek</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="pages/products.html?category=1">Faanyagok</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="pages/products.html?category=2">Csavarok</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="pages/products.html?category=3">Ragasztók</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="pages/products.html?category=4">Szerszámok</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="pages/products.html?category=5">Dekorációk</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- Navbar menu items END -->
+
+        <!-- SEARCH FORM LARGE SCREEN BEGIN -->
+        <form class="align-items-center d-none d-lg-flex me-2">
+          <input type="text" class="form-control me-2" placeholder="Keresés">
+          <div class="cart">
+            <a role="button" class="position-relative" href="pages/cart.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+                </path>
+              </svg>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-count">
+              </span>
+            </a>
+          </div>
+        </form>
+        <!-- SEARCH FORM LARGE SCREEN END -->
+      </div>
+    </nav>
+    <!-- ///////////// NAVIGATION END /////////////-->
+
+    <!--//////////////// CONTENT ////////////////-->
+    <div class="container desktop-main rounded p-4">
+      <div class="row">
+        <h1 class="text-start fw-bold">Egy hír címe</h1>
+      </div>
+      <div class="row mb-3">
+        <div>
+          <span class="badge bg-success bg-opacity-10 text-dark border border-success">Receptek
+          </span>
+          <span class="badge bg-success bg-opacity-10 text-dark border border-success">Ötletek
+          </span>
+          <span class="badge bg-success bg-opacity-10 text-dark border border-success">DIY
+          </span>
+        </div>
+      </div>
+      <div class="row">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna
+          aliqua. Tristique risus nec feugiat in fermentum posuere urna nec. Sit amet dictum sit amet justo donec enim
+          diam
+          vulputate. Sit amet porttitor eget dolor. Morbi tincidunt ornare massa eget egestas purus. Pellentesque elit
+          eget
+          gravida cum sociis natoque penatibus et. Condimentum mattis pellentesque id nibh tortor. Sed viverra ipsum
+          nunc
+          aliquet.</p>
+        <p>
+          Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Aliquam nulla facilisi cras fermentum
+          odio eu
+          feugiat pretium. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Rutrum
+          tellus
+          pellentesque eu tincidunt tortor. Scelerisque viverra mauris in aliquam sem fringilla. Cursus metus aliquam
+          eleifend mi
+          in nulla posuere. Semper viverra nam libero justo laoreet sit amet. Nam at lectus urna duis convallis
+          convallis
+          tellus
+          id. Egestas pretium aenean pharetra magna ac. Est ultricies integer quis auctor elit sed. Mauris nunc congue
+          nisi vitae
+          suscipit tellus mauris. Viverra justo nec ultrices dui sapien. Eu feugiat pretium nibh ipsum consequat nisl
+          vel
+          pretium.
+          A iaculis at erat pellentesque. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum.
+          Adipiscing
+          tristique risus nec feugiat. Aliquam faucibus purus in massa tempor nec feugiat nisl pretium. Elementum
+          curabitur vitae
+          nunc sed velit dignissim. Aliquet nec ullamcorper sit amet risus nullam eget felis. Non curabitur gravida arcu
+          ac tortor
+          dignissim. Morbi enim nunc faucibus a pellentesque sit amet. Bibendum neque egestas congue quisque egestas
+          diam
+          in. In
+          hac habitasse platea dictumst quisque sagittis. Praesent elementum facilisis leo vel fringilla est
+          ullamcorper.
+          Venenatis a condimentum vitae sapien pellentesque. Pretium quam vulputate dignissim suspendisse in est ante.
+          Ut
+        </p>
+        <p>
+          aliquam
+          purus sit amet luctus venenatis lectus. Ut etiam sit amet nisl purus in mollis nunc sed. Quam elementum
+          pulvinar
+          etiam
+          non quam lacus suspendisse. Faucibus et molestie ac feugiat sed. Faucibus in ornare quam viverra. Sed risus
+          ultricies
+          tristique nulla aliquet enim tortor at. Vitae aliquet nec ullamcorper sit amet risus. Amet venenatis urna
+          cursus
+          eget
+          nunc scelerisque viverra mauris in. Habitant morbi tristique senectus et netus et. Pellentesque diam volutpat
+          commodo
+          sed egestas. Lectus proin nibh nisl condimentum id venenatis a condimentum. Vivamus at augue eget arcu.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer p-4">
+    <div class="d-flex justify-content-between flex-column flex-md-row gap-3 gap-md-0">
+      <div class="d-flex gap-3 gap-md-5 flex-column flex-md-row">
+        <div class="d-flex flex-column">
+          <h4 class="footer-title">Nyitvatartás</h4>
+          <span class="footer-subtext"><span class="fw-bold">H: </span>9:00 - 15:00</span>
+          <span class="footer-subtext"><span class="fw-bold">K: </span>9:00 - 15:00</span>
+          <span class="footer-subtext"><span class="fw-bold">SZ: </span>9:00 - 15:00</span>
+          <span><span class="fw-bold">CS: </span>9:00 - 15:00</span>
+          <span class="footer-subtext"><span class="fw-bold">P: </span>10:00 - 13:00</span>
+        </div>
+        <div class="d-flex flex-column">
+          <h4 class="footer-title">Elérhetőség</h4>
+          <span class="footer-subtext"><span class="fw-bold">Tel.: </span>+36 70 000 0000</span>
+          <span class="footer-subtext"><span class="fw-bold">Email: </span>info@barkacsbolt.hu</span>
+          <span class="footer-subtext"><span class="fw-bold">Cím: </span>1039, Budapest, Pablo Neruda
+            utca 1.</span>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column">
+        <h4 class="text-start text-md-end footer-title">
+          Hírlevél feliratkozás
+        </h4>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="E-mail cím" aria-label="E-mail cím"
+            aria-describedby="button-addon2">
+          <button class="btn btn-secondary" type="button" id="button-addon2">
+            Feliratkozás
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="products-data/products-data.js"></script>
+  <script src="products-data/products.js"></script>
+  <script src="scripts/utils.js"></script>
+  <script src="scripts/cart.js"></script>
+  <script src="scripts/cart_count.js"></script>
+</body>
+
+</html>

@@ -167,7 +167,7 @@ body {
   font-weight: bold;
 }
 .blog-preview {
-  background-color: none;
+  background-color: unset;
   box-shadow: none;
 }
 
