@@ -1,6 +1,15 @@
+KÉPEK
+OBI weboldala
 https://pixabay.com/photos/paintbrush-paint-diy-brush-tool-4577578/
 https://pixabay.com/photos/wood-wooden-boards-wooden-planks-411643/
 https://pixabay.com/photos/tools-construct-craft-repair-864983/
 https://pixabay.com/photos/screw-thread-technology-screw-nut-1924173/
 https://pixabay.com/photos/repair-glue-fix-adhesive-891422/
 https://pixabay.com/photos/flat-lay-template-wooden-background-4022714/
+https://diyprojects.com/diy-craft-sites/
+https://www.thesprucecrafts.com/beginner-woodworking-projects-4580369
+https://www.manmadediy.com/beginner-woodworking-projects/?chrome=1
+
+KÖNYVTÁRAK
+Bootstrap
+Fuse.js

@@ -9,6 +9,9 @@
 /* //////////////// PAGE SPECIFIC //////////////// */
 /* /////////////////////////////////////////////// */
 /* HOME */
+#carosuel-container{
+  height: 280px;
+}
 .onsale-scroll {
   flex-wrap: wrap;
   justify-content: flex-start;
